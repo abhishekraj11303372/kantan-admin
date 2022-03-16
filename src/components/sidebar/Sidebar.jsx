@@ -21,23 +21,32 @@ function Sidebar() {
       <hr/>
       <div className="center">
         <ul>
-          <li><DashboardIcon/>
+          <p className="title">MAIN</p>
+          <li><DashboardIcon className="icon"/>
             <span>Dashboard</span>
           </li>
-          <li><AccountCircleIcon/><span>Users</span></li>
-          <li><ReceiptIcon/><span>Orders</span></li>
-          <li><InventoryIcon/><span>Product</span></li>
-          <li><DeliveryDiningIcon/><span>Delivery</span></li>
-          <li><QueryStatsIcon/><span>Stats</span></li>
-          <li><NotificationsIcon/><span>Notifications</span></li>
-          <li><HealthAndSafetyIcon/><span>System Health</span></li>
-          <li><FactCheckIcon/><span>Logs</span></li>
-          <li><SettingsApplicationsIcon/><span>Settings</span></li>
-          <li><AccountBoxIcon/><span>Profile</span></li>
-          <li><LogoutIcon/><span>Logout</span></li>
+          <p className="title">LISTS</p>
+          <li><AccountCircleIcon className="icon"/><span>Users</span></li>
+          <li><ReceiptIcon className="icon"/><span>Orders</span></li>
+          <li><InventoryIcon className="icon"/><span>Product</span></li>
+          <li><DeliveryDiningIcon className="icon"/><span>Delivery</span></li>
+          <p className="title">USEFUL LINKS</p>
+          <li><QueryStatsIcon className="icon"/><span>Stats</span></li>
+          <li><NotificationsIcon className="icon"/><span>Notifications</span></li>
+          <p className="title">SERVICE</p>
+          <li><HealthAndSafetyIcon className="icon"/><span>System Health</span></li>
+          <li><FactCheckIcon className="icon"/><span>Logs</span></li>
+          <li><SettingsApplicationsIcon className="icon"/><span>Settings</span></li>
+          <p className="title">USER</p>
+          <li><AccountBoxIcon className="icon"/><span>Profile</span></li>
+          <li><LogoutIcon className="icon"/><span>Logout</span></li>
         </ul>
       </div>
-      <div className="bottom">color options</div>  
+      <div className="bottom">
+        <div className="color-options"></div>  
+        <div className="color-options"></div>  
+        <div className="color-options"></div>  
+      </div>  
     </div>
   )
 }
