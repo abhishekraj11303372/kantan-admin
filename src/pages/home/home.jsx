@@ -4,8 +4,8 @@ import Sidebar from "../../components/sidebar/Sidebar.jsx"
 function Home() {
   return (
     <div className="home">
-      Home
       <Sidebar/>  
+      <div className="homeContainer">Container</div>
     </div>
   )
 }
