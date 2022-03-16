@@ -1,8 +1,12 @@
 import "./home.scss"
+import Sidebar from "../../components/sidebar/Sidebar.jsx"
 
 function Home() {
   return (
-    <div>home</div>
+    <div className="home">
+      Home
+      <Sidebar/>  
+    </div>
   )
 }
 
