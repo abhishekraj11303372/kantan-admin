@@ -1,9 +1,9 @@
 import React from 'react'
 
-function newUser() {
+function New() {
   return (
     <div>new</div>
   )
 }
 
-export default newUser
+export default New

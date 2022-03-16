@@ -1,9 +1,9 @@
 import React from 'react'
 
-function single() {
+function Single() {
   return (
-    <div>single</div>
+    <div>S</div>
   )
 }
 
-export default single
+export default Single
