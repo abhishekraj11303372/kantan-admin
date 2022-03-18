@@ -20,7 +20,7 @@ function Home() {
         </div>
         <div className="charts">
           <Featured/>
-          <Charts />
+          <Charts title="User spending (last 7 months)"/>
         </div>
         <div className="listContainer">
           <div className="listTitle">
