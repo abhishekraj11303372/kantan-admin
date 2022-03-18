@@ -18,16 +18,20 @@
     .cellWithStatus {
         padding: 5px;
         border-radius: 5px;
-        background-color: aqua;
         
         &.active {
             color: green;
             background-color: rgba(0,128,0,0.15);
         }
 
-        &.passive {
+        &.hold {
             color: goldenrod;
             background-color: rgba(189,189,3,0.15);
+        }
+
+        &.passive {
+            color: red;
+            background-color: rgba(236, 12, 12, 0.3);
         }
     }
 }

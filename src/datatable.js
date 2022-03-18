@@ -24,16 +24,17 @@ export const userColumns =[
     width:100,
   },
   {
-    field: "status",
-    headerName:"Status",
-    width:160,
+    field:"status",
+    headerName: "Status",
+    width:230 ,
     renderCell: (params) => {
-      <div className={`cellWithStatus ${params.row.status}`}>
-        {params.row.status}
-      </div>
-    }
-  }
-
+      return(
+        <div className={`cellWithStatus ${params.row.status}`} >
+          {params.row.status}
+        </div>
+      );
+    },
+  },
 ];
 
 // export const columns = [
@@ -61,7 +62,7 @@ export const userColumns =[
     { id: 1, status:"active" ,email:"abc1@mail.com" , img:"https://images.pexels.com/photos/177598/pexels-photo-177598.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" ,lastName: 'Snow', firstName: 'Jon', age: 35 },
     { id: 2, status:"passive" ,email:"abc2@mail.com" , img:"https://images.pexels.com/photos/331990/pexels-photo-331990.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" ,lastName: 'Lannister', firstName: 'Cersei', age: 42 },
     { id: 3, status:"active" ,email:"abc3@mail.com" , img:"https://images.pexels.com/photos/796602/pexels-photo-796602.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" ,lastName: 'Lannister', firstName: 'Jaime', age: 45 },
-    { id: 4, status:"active" ,email:"abc4@mail.com" , img:"https://images.pexels.com/photos/109998/pexels-photo-109998.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" ,lastName: 'Stark', firstName: 'Arya', age: 16 },
+    { id: 4, status:"hold" ,email:"abc4@mail.com" , img:"https://images.pexels.com/photos/109998/pexels-photo-109998.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" ,lastName: 'Stark', firstName: 'Arya', age: 16 },
     { id: 5, status:"passive" ,email:"abc5@mail.com" , img:"https://images.pexels.com/photos/1906795/pexels-photo-1906795.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" ,lastName: 'Targaryen', firstName: 'Daenerys', age: null },
     { id: 6, status:"active" ,email:"abc6@mail.com" , img:"https://images.pexels.com/photos/2869565/pexels-photo-2869565.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" ,lastName: 'Melisandre', firstName: null, age: 150 },
     { id: 7, status:"active" ,email:"abc7@mail.com" , img:"https://images.pexels.com/photos/159866/books-book-pages-read-literature-159866.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" ,lastName: 'Clifford', firstName: 'Ferrara', age: 44 },
