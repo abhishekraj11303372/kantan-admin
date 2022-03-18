@@ -1,8 +1,19 @@
-import React from 'react'
+import "./list.scss"
+import Sidebar from "../../components/sidebar/Sidebar"
+import Navbar from "../../components/navbar/Navbar"
+import Datatable from '../../components/datatable/Datatable.jsx'
 
 function List() {
   return (
-    <div>list</div>
+    <div className="list">
+      <Sidebar />
+      <div className="listContainer">
+        <Navbar />
+        <div className="dataGrid">
+          <Datatable />
+        </div>
+      </div>
+    </div>
   )
 }
 
