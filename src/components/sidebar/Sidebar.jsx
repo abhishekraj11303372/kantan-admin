@@ -11,12 +11,15 @@ import FactCheckIcon from '@mui/icons-material/FactCheck';
 import SettingsApplicationsIcon from '@mui/icons-material/SettingsApplications';
 import AccountBoxIcon from '@mui/icons-material/AccountBox';
 import LogoutIcon from '@mui/icons-material/Logout';
+import {Link} from "react-router-dom"
 
 function Sidebar() {
   return (
     <div className='sidebar'>
       <div className="top">
-        <span className="logo">Kantan Admin</span>
+        <Link to="/" style={{textDecoration:"none"}}>
+          <span className="logo">Kantan Admin</span>
+        </Link>
       </div>
       <hr/>
       <div className="center">
@@ -26,9 +29,13 @@ function Sidebar() {
             <span>Dashboard</span>
           </li>
           <p className="title">LISTS</p>
-          <li><AccountCircleIcon className="icon"/><span>Users</span></li>
+          <Link to="/users" style={{textDecoration:"none"}}>
+            <li><AccountCircleIcon className="icon"/><span>Users</span></li>
+          </Link>
           <li><ReceiptIcon className="icon"/><span>Orders</span></li>
-          <li><InventoryIcon className="icon"/><span>Product</span></li>
+          <Link to="/products" style={{textDecoration:"none"}}>
+            <li><InventoryIcon className="icon"/><span>Product</span></li>
+          </Link>
           <li><DeliveryDiningIcon className="icon"/><span>Delivery</span></li>
           <p className="title">USEFUL LINKS</p>
           <li><QueryStatsIcon className="icon"/><span>Stats</span></li>

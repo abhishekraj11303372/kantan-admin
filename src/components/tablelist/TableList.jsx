@@ -24,7 +24,7 @@ function TableList() {
 
   return (
     <div className='table'>
-        <TableContainer component={Paper}>
+    <TableContainer component={Paper} className="tableContainer">
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
           <TableRow>
@@ -43,7 +43,7 @@ function TableList() {
               key={row.name}
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
             >
-              <TableCell component="th" scope="row">
+              <TableCell component="th" scope="row" className='tableCell'>
                 {row.trackingid}
               </TableCell>
               <TableCell align="right">
