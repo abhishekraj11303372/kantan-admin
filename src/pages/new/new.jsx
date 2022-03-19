@@ -18,7 +18,7 @@ function New({inputs,title}) {
         </div>
         <div className="bottom">
           <div className="left">
-          <img src="https://icon-library.com/images/no-image-available-icon/no-image-available-icon-7.jpg" alt="uploaded Image"/>
+          <img src={file ? URL.createObjectURL(file) : "https://icon-library.com/images/no-image-available-icon/no-image-available-icon-7.jpg"} alt="uploaded Image"/>
           </div>
           <div className="right">
             <form>
