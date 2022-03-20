@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/kantan-admin/static/css/main.565e0aca.css",
+    "main.js": "/kantan-admin/static/js/main.80f70e0c.js",
+    "static/media/profile.jpg": "/kantan-admin/static/media/profile.b2013a1971d1c823b623.jpg",
+    "index.html": "/kantan-admin/index.html",
+    "main.565e0aca.css.map": "/kantan-admin/static/css/main.565e0aca.css.map",
+    "main.80f70e0c.js.map": "/kantan-admin/static/js/main.80f70e0c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.565e0aca.css",
+    "static/js/main.80f70e0c.js"
+  ]
+}
