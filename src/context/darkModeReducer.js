@@ -20,3 +20,5 @@ const DarkModeReducer = (state, action) => {
             return state;
     }
 }
+
+export default DarkModeReducer;
