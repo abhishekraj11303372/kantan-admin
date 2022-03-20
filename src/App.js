@@ -6,18 +6,19 @@ import New from "./pages/new/New.jsx"
 import { BrowserRouter,Routes, Route} from "react-router-dom";
 import { productInputs, userInputs } from "./formSource.js"
 import "./style/dark.scss"
-import { useState } from "react"
+import { useContext } from "react"
+import { DarkModeContext } from "./context/darkModeContext.js"
 
 function App() {
-const [dark,setDark] = useState(false)
+const {darkMode} = useContext(DarkModeContext);
 
   return (
-     <div className={dark ? "app dark":"app"}>
+     <div className={darkMode ? "app dark":"app"}>
       <BrowserRouter>
         <Routes>
           <Route path="/">
-            <Route index element={<Home setDark={setDark}/>}/>
-            <Route path="login" element={<Login setDark={setDark}/>}/>
+            <Route index element={<Home />}/>
+            <Route path="login" element={<Login/>}/>
             <Route path="users">
               <Route index element={<List/>}/>
               <Route path=":userId" element={<Single/>}/> 

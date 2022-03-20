@@ -32,6 +32,10 @@
         .items {
             display: flex;
 
+            .icon {
+                cursor: pointer;
+            }
+
             .item {
                 display: flex;
                 align-items: center;

@@ -6,8 +6,12 @@ import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
 import ListIcon from '@mui/icons-material/List';
 import './navbar.scss';
 import Photo from '../../profile.jpg'
+import { DarkModeContext } from '../../context/darkModeContext';
+import { useContext } from 'react';
 
 function Navbar() {
+  const {dispatch} = useContext(DarkModeContext);
+
   return (
     <div className='navbar'>
       <div className="wrapper">
@@ -17,7 +21,7 @@ function Navbar() {
         </div>
         <div className="items">
           <div className="item"><LanguageIcon className="icon"/>English</div>
-          <div className="item"><DarkModeIcon className="icon"/></div>
+          <div className="item"><DarkModeIcon className="icon" onClick={() => dispatch ({type:"TOGGLE"})}/></div>
           <div className="item">
             <NotificationsNoneIcon className="icon"/>
             <div className="counter">1</div>
