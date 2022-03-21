@@ -9,7 +9,7 @@ import TableList from "../../components/tablelist/TableList.jsx"
 function Home() {
   return (
     <div className="home">
-      <Sidebar/>  
+      <Sidebar/> 
       <div className="homeContainer">
         <Navbar/>
         <div className="widgets">
